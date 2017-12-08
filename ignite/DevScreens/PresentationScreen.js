@@ -5,14 +5,6 @@ import ButtonBox from './ButtonBox'
 import { StackNavigator } from 'react-navigation'
 import RoundedButton from '../../App/Components/RoundedButton'
 
-// Screens
-import APITestingScreen from './APITestingScreen'
-import ComponentExamplesScreen from './ComponentExamplesScreen'
-import DeviceInfoScreen from './DeviceInfoScreen'
-import PluginExamplesScreen from './PluginExamplesScreen'
-import ThemeScreen from './ThemeScreen'
-import FaqScreen from './FaqScreen'
-
 // Styles
 import styles from './Styles/PresentationScreenStyles'
 
