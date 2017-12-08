@@ -26,6 +26,13 @@ export default StyleSheet.create({
     borderRightWidth: 1,
     borderBottomWidth: 1
   },
+  componentButtonSelected: {
+    borderColor: Colors.border,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderBottomWidth: 1,
+    backgroundColor: Colors.banner,
+  },
   apiButton: {
     borderColor: Colors.border,
     borderRightWidth: 1,
@@ -35,6 +42,12 @@ export default StyleSheet.create({
     borderColor: Colors.border,
     borderTopWidth: 1,
     borderBottomWidth: 1
+  },
+  usageButtonSelected: {
+    borderColor: Colors.border,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    backgroundColor: Colors.banner,
   },
   deviceButton: {
     borderColor: Colors.border,
@@ -48,6 +61,15 @@ export default StyleSheet.create({
     marginHorizontal: Metrics.baseMargin,
     lineHeight: 30,
     marginVertical: Metrics.doubleBaseMargin,
+    color: Colors.text
+  },
+  scoreText: {
+    textAlign: 'center',
+    fontFamily: Fonts.base,
+    fontSize: 40,
+    marginHorizontal: Metrics.baseMargin,
+    lineHeight: 50,
+    marginVertical: Metrics.doubleBaseMargin*4,
     color: Colors.text
   },
   banner: {

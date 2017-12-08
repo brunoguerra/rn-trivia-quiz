@@ -8,12 +8,16 @@ export default class DevscreensButton extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      showModal: false
+      showModal: false,
+      startTime: new Date(),
     }
   }
 
   toggleModal = () => {
-    this.setState({ showModal: !this.state.showModal })
+    this.setState({
+      showModal: !this.state.showModal,
+      startTime: !this.state.showModal? new Date() : this.state.startTime,
+    })
   }
 
   render () {
@@ -21,12 +25,14 @@ export default class DevscreensButton extends React.Component {
       return (
         <View>
           <RoundedButton onPress={this.toggleModal}>
-            Open DevScreens
+            Start Quiz
           </RoundedButton>
           <Modal
             visible={this.state.showModal}
             onRequestClose={this.toggleModal}>
-            <PresentationScreen screenProps={{ toggle: this.toggleModal }} />
+            <PresentationScreen
+              screenProps={{ toggle: this.toggleModal, startTime: this.state.startTime, }}
+            />
           </Modal>
         </View>
       )
